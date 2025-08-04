@@ -24,7 +24,7 @@ export function FallingStars() {
           className="star"
           style={
             {
-              left: `${star.x}%`,
+              '--tw-translate-x': `${star.x}vw`,
               animationDuration: `${star.duration}s`,
               animationDelay: `${star.delay}s`,
             } as React.CSSProperties
