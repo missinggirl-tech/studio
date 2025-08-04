@@ -4,12 +4,10 @@ import { Experience } from '@/components/experience';
 import { Contact } from '@/components/contact';
 import { Suggestions } from '@/components/suggestions';
 import { Separator } from '@/components/ui/separator';
-import { Bubbles } from '@/components/bubbles';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative">
-      <Bubbles />
       <header className="p-4 md:p-6 sticky top-0 bg-background/80 backdrop-blur-sm z-10 border-b">
         <nav className="container mx-auto flex items-center justify-center md:justify-start">
           <h1 className="text-2xl font-headline text-primary-foreground bg-primary/90 px-3 py-1 rounded-md shadow-sm">Sahana's Space</h1>
