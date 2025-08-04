@@ -13,7 +13,7 @@ export function Background() {
       try {
         const result = await generateBackground({
           prompt:
-            "A visually striking space-themed background with swirling galaxies and a subtle cosmic glow.",
+            "Cosmic website background in a modern galaxy theme, with swirling galaxies, nebulae, sparkling stars, and vibrant gradients of deep blue, purple, magenta, and cosmic black. Bright, luminous, and immersive, with a clean design, subtle cosmic glow, and ample negative space for readability. No clocks or non-cosmic elements. Suitable for a modern portfolio site.",
         });
         setImageUrl(result.imageUrl);
       } catch (e) {
