@@ -3,10 +3,12 @@ import { Skills } from '@/components/skills';
 import { Experience } from '@/components/experience';
 import { Contact } from '@/components/contact';
 import { Suggestions } from '@/components/suggestions';
+import { Background } from '@/components/background';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative">
+      <Background />
       <header className="py-4 md:py-6">
         <nav className="container mx-auto flex items-center justify-center">
           <h1 className="text-xl font-headline text-primary-foreground bg-primary/90 px-4 py-1.5 rounded-md shadow-sm">Sahana's Space</h1>
