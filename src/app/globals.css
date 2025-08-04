@@ -81,3 +81,22 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: fall linear infinite;
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-200px) translateX(var(--tw-translate-x));
+  }
+  to {
+    transform: translateY(calc(100vh + 200px)) translateX(var(--tw-translate-x));
+  }
+}
