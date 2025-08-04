@@ -31,31 +31,25 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="space-y-8">
-      <h2 className="text-3xl md:text-4xl font-headline text-center">Experience & Education</h2>
-      <div className="max-w-2xl mx-auto space-y-6">
+    <div className="space-y-6">
+      <h2 className="text-2xl font-headline text-center">Experience & Education</h2>
         {experiences.map((exp) => (
-          <Card key={exp.title} className="transition-all duration-300 hover:shadow-lg border-primary/20">
-            <CardHeader className="flex flex-row items-start justify-between gap-4">
-              <div>
-                <CardTitle className="font-headline text-xl">{exp.title}</CardTitle>
-                <CardDescription>{exp.company} &middot; {exp.period}</CardDescription>
-                <p className="mt-3 text-muted-foreground">{exp.description}</p>
-              </div>
-              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-accent text-accent-foreground flex-shrink-0">
-                {exp.icon}
-              </span>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2">
+          <div key={exp.title} className="flex items-start gap-4">
+            <span className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-secondary-foreground flex-shrink-0 mt-1">
+              {exp.icon}
+            </span>
+            <div>
+              <h3 className="font-bold">{exp.title}</h3>
+              <p className="text-sm text-muted-foreground">{exp.company} &middot; {exp.period}</p>
+              <p className="mt-2 text-sm">{exp.description}</p>
+               <div className="flex flex-wrap gap-2 mt-3">
                 {exp.tags.map(tag => (
-                  <Badge key={tag} variant="secondary">{tag}</Badge>
+                  <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
                 ))}
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         ))}
-      </div>
-    </section>
+    </div>
   );
 }

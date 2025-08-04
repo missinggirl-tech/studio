@@ -34,7 +34,7 @@ export function SuggestionEngine({ profileInformation }: SuggestionEngineProps) 
   return (
     <div className="space-y-6">
       <div className="flex justify-center">
-        <Button onClick={handleSuggest} disabled={isLoading} size="lg" className="shadow-md">
+        <Button onClick={handleSuggest} disabled={isLoading} size="lg" className="shadow-lg bg-primary hover:bg-primary/90 text-primary-foreground">
           {isLoading ? (
             <Loader2 className="animate-spin" />
           ) : (
@@ -49,13 +49,11 @@ export function SuggestionEngine({ profileInformation }: SuggestionEngineProps) 
       {isLoading && (
         <div className="grid gap-4 md:grid-cols-2 max-w-4xl mx-auto">
           {[...Array(2)].map((_, i) => (
-            <Card key={i}>
-              <CardContent className="p-6 space-y-2">
-                <Skeleton className="h-4 w-1/4" />
-                <Skeleton className="h-4 w-full" />
-                <Skeleton className="h-4 w-3/4" />
-              </CardContent>
-            </Card>
+            <div key={i} className="bento-item">
+              <Skeleton className="h-4 w-1/4" />
+              <Skeleton className="h-4 w-full mt-2" />
+              <Skeleton className="h-4 w-3/4 mt-2" />
+            </div>
           ))}
         </div>
       )}
@@ -65,11 +63,9 @@ export function SuggestionEngine({ profileInformation }: SuggestionEngineProps) 
       {!isLoading && suggestions.length > 0 && (
         <div className="grid gap-4 md:grid-cols-2 max-w-4xl mx-auto animate-in fade-in-50">
           {suggestions.map((suggestion, index) => (
-            <Card key={index} className="bg-card border-primary/30">
-              <CardContent className="p-6">
-                <p className="font-body text-card-foreground">{suggestion}</p>
-              </CardContent>
-            </Card>
+            <div key={index} className="bento-item">
+              <p className="font-body text-foreground">{suggestion}</p>
+            </div>
           ))}
         </div>
       )}

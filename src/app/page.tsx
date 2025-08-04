@@ -4,21 +4,16 @@ import { Experience } from '@/components/experience';
 import { Contact } from '@/components/contact';
 import { Suggestions } from '@/components/suggestions';
 import { Background } from '@/components/background';
+import { BentoGrid } from '@/components/bento-grid';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative">
       <Background />
-      <header className="py-4 md:py-6">
-        <nav className="container mx-auto flex items-center justify-center">
-          <h1 className="text-xl font-headline text-primary-foreground bg-primary/90 px-4 py-1.5 rounded-md shadow-sm">Sahana's Space</h1>
-        </nav>
-      </header>
       <main className="flex-grow container mx-auto px-4 py-8 md:px-6 md:py-16 z-[1]">
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-8 md:space-y-12">
           <ProfileHeader />
-          <Skills />
-          <Experience />
+          <BentoGrid />
           <Suggestions />
           <Contact />
         </div>

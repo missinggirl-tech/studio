@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Badge } from "@/components/ui/badge";
 import { CodeXml, Palette, BrainCircuit, Users } from "lucide-react";
 
@@ -14,20 +15,20 @@ const skills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="space-y-8">
-      <h2 className="text-3xl md:text-4xl font-headline text-center">My Skills</h2>
-      <div className="flex flex-wrap justify-center gap-3">
+    <div>
+      <h2 className="text-2xl font-headline text-center mb-4">My Skills</h2>
+      <div className="flex flex-wrap justify-center gap-2">
         {skills.map((skill) => (
           <Badge 
             key={skill.name} 
-            variant="outline" 
-            className="text-sm font-body px-3 py-1.5 bg-card border-primary/30 transition-transform hover:scale-105 hover:bg-accent/50 flex items-center gap-2"
+            variant="secondary"
+            className="text-xs font-body px-3 py-1.5 flex items-center gap-1.5"
           >
-            {skill.icon}
+            {React.cloneElement(skill.icon, { size: 14 })}
             <span>{skill.name}</span>
           </Badge>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
