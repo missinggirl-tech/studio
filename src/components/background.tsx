@@ -13,7 +13,7 @@ export function Background() {
       try {
         const result = await generateBackground({
           prompt:
-            'A visually stunning background featuring a large, ornate clock with Roman numerals, set against a swirling cosmic scene with stars, clouds, and celestial elements. The overall mood should be mystical and dreamlike, with a sense of time and space blending together. Use dramatic lighting and deep, vibrant colors to create an immersive, otherworldly atmosphere.',
+            'Design a stunning website background in a modern comet theme, featuring swirling galaxies, vibrant space nebulae, sparkling stars, and a glowing comet streaking across the image. Emphasize deep cosmic colors like blues, purples, and black, with gradients and subtle glowing effects to create an immersive, futuristic space atmosphere suited for a portfolio website.',
         });
         setImageUrl(result.imageUrl);
       } catch (e) {
