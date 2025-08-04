@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { generateBackground } from '@/ai/flows/generate-background';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -12,8 +11,7 @@ export function Background() {
     const fetchBackground = async () => {
       try {
         const result = await generateBackground({
-          prompt:
-            "A professional, elegant, and abstract background with soft, ethereal light and subtle gradients of lavender and pale violet. The design should be clean, modern, and minimalist, with a gentle, calming feel. No hard edges or distracting elements.",
+          prompt: "A highly visually stunning and professional galaxy-themed website background with deeply rich and swirling gradients of deep blues, indigos, purples, and magentas. Feature prominent, yet soft and glowing, nebulae and sparkling, distant stars. The composition should feel incredibly immersive and luminous, with a strong, subtle cosmic glow adding significant depth. The center must remain absolutely clear and uncluttered for content display. Exclusively include elements strictly cosmic in nature. The final result should be exceptionally clean and ideal for a high-end personal portfolio or professional brand site.",
         });
         setImageUrl(result.imageUrl);
       } catch (e) {
