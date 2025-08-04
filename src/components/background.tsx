@@ -13,7 +13,7 @@ export function Background() {
       try {
         const result = await generateBackground({
           prompt:
-            "Design a stunning website background in a modern comet theme, featuring swirling galaxies, vibrant space nebulae, sparkling stars, and a glowing comet streaking across the image. Emphasize deep cosmic colors like blues, purples, and black, with gradients and subtle glowing effects to create an immersive, futuristic space atmosphere suited for a portfolio website.",
+            "A visually striking space-themed background with swirling galaxies and a subtle cosmic glow.",
         });
         setImageUrl(result.imageUrl);
       } catch (e) {
