@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { suggestConnections } from '@/ai/flows/suggest-connections';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Loader2, Sparkles, Wand2 } from 'lucide-react';
+import { Loader2, Wand2 } from 'lucide-react';
 import { Skeleton } from './ui/skeleton';
 
 type SuggestionEngineProps = {
@@ -40,14 +40,14 @@ export function SuggestionEngine({ profileInformation }: SuggestionEngineProps) 
           ) : (
             <>
               <Wand2 className="mr-2" />
-              Generate Suggestions
+              Generate Ideas
             </>
           )}
         </Button>
       </div>
 
       {isLoading && (
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2 max-w-4xl mx-auto">
           {[...Array(2)].map((_, i) => (
             <Card key={i}>
               <CardContent className="p-6 space-y-2">
@@ -63,14 +63,11 @@ export function SuggestionEngine({ profileInformation }: SuggestionEngineProps) 
       {error && <p className="text-center text-destructive">{error}</p>}
 
       {!isLoading && suggestions.length > 0 && (
-        <div className="grid gap-4 md:grid-cols-2 animate-in fade-in-50">
+        <div className="grid gap-4 md:grid-cols-2 max-w-4xl mx-auto animate-in fade-in-50">
           {suggestions.map((suggestion, index) => (
-            <Card key={index} className="bg-accent/30 border-accent hover:border-primary transition-colors">
-              <CardContent className="p-6 flex items-start gap-4">
-                <span className="text-primary pt-1">
-                  <Sparkles />
-                </span>
-                <p className="font-body">{suggestion}</p>
+            <Card key={index} className="bg-card border-primary/30">
+              <CardContent className="p-6">
+                <p className="font-body text-card-foreground">{suggestion}</p>
               </CardContent>
             </Card>
           ))}

@@ -16,12 +16,12 @@ export function Skills() {
   return (
     <section id="skills" className="space-y-8">
       <h2 className="text-3xl md:text-4xl font-headline text-center">My Skills</h2>
-      <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+      <div className="flex flex-wrap justify-center gap-3">
         {skills.map((skill) => (
           <Badge 
             key={skill.name} 
             variant="outline" 
-            className="text-base font-body px-4 py-2 bg-card border-primary/50 transition-transform hover:scale-105 hover:bg-accent/50 flex items-center gap-2"
+            className="text-sm font-body px-3 py-1.5 bg-card border-primary/30 transition-transform hover:scale-105 hover:bg-accent/50 flex items-center gap-2"
           >
             {skill.icon}
             <span>{skill.name}</span>

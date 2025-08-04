@@ -14,7 +14,7 @@ export function Suggestions() {
   return (
     <section id="suggestions" className="space-y-8">
       <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-headline">Smart Suggestions</h2>
+        <h2 className="text-3xl md:text-4xl font-headline">Smart Suggestions for Sahana</h2>
         <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Discover new connections and opportunities based on my profile, powered by AI. Click the button to see what it comes up with!</p>
       </div>
       <SuggestionEngine profileInformation={sahanaProfile} />

@@ -113,7 +113,7 @@ export function ContactForm() {
           ) : (
             <>
               <Send className="mr-2" />
-              Send Message
+              Send
             </>
           )}
         </Button>
