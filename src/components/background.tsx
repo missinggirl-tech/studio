@@ -13,7 +13,7 @@ export function Background() {
       try {
         const result = await generateBackground({
           prompt:
-            'Create a website background in a dreamy, comet-themed galaxy style with animated stars/comets for depth, and a parallax effect. The design should feel modern, immersive, and visually dynamic.',
+            "Design a stunning website background in a modern comet theme, featuring swirling galaxies, vibrant space nebulae, sparkling stars, and a glowing comet streaking across the image. Emphasize deep cosmic colors like blues, purples, and black, with gradients and subtle glowing effects to create an immersive, futuristic space atmosphere suited for a portfolio website.",
         });
         setImageUrl(result.imageUrl);
       } catch (e) {
@@ -41,9 +41,10 @@ export function Background() {
 
   return (
     <div
-      className="absolute inset-0 -z-10 bg-cover bg-center"
+      className="absolute inset-0 -z-10 bg-cover bg-center animate-move-bg"
       style={{
         backgroundImage: `url(${imageUrl})`,
+        backgroundSize: '150% 150%',
       }}
     />
   );
