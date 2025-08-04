@@ -13,7 +13,7 @@ export function Background() {
       try {
         const result = await generateBackground({
           prompt:
-            "Vivid dark blue cosmic website background, swirling galaxies, blue and indigo nebulae, sparkling stars, glowing clouds, deep gradients, modern style, immersive and luminous, no non-cosmic elements.",
+            "A professional, elegant, and abstract background with soft, ethereal light and subtle gradients of lavender and pale violet. The design should be clean, modern, and minimalist, with a gentle, calming feel. No hard edges or distracting elements.",
         });
         setImageUrl(result.imageUrl);
       } catch (e) {
@@ -40,12 +40,17 @@ export function Background() {
   }
 
   return (
-    <div
-      className="absolute inset-0 -z-10 bg-cover bg-center animate-move-bg"
-      style={{
-        backgroundImage: `url(${imageUrl})`,
-        backgroundSize: '150% 150%',
-      }}
-    />
+    <>
+      <div
+        className="absolute inset-0 -z-20 bg-background"
+      />
+      <div
+        className="absolute inset-0 -z-10 bg-cover bg-center animate-move-bg"
+        style={{
+          backgroundImage: `url(${imageUrl})`,
+          backgroundSize: '150% 150%',
+        }}
+      />
+    </>
   );
 }

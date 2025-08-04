@@ -8,8 +8,8 @@ export function ProfileHeader() {
         <AvatarFallback>AS</AvatarFallback>
       </Avatar>
       <div className="space-y-3">
-        <h1 className="text-5xl md:text-6xl font-headline text-white">Amreen Sahana</h1>
-        <p className="mt-2 text-base md:text-lg text-muted-foreground max-w-2xl">
+        <h1 className="text-5xl md:text-6xl font-headline text-foreground">Amreen Sahana</h1>
+        <p className="mt-2 text-base md:text-lg text-muted-foreground max-w-2xl font-body">
           I am a NIAT student from Crescent Campus, passionate about technology, innovation, and creative design.
         </p>
       </div>
