@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { FallingStars } from '@/components/falling-stars';
 
 export const metadata: Metadata = {
-  title: "Sahana's Space",
-  description: "A personal profile page for Sahana.",
+  title: "Amreen Sahana's Space",
+  description: "A personal profile page for Amreen Sahana.",
 };
 
 export default function RootLayout({
