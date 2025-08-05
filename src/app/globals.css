@@ -4,21 +4,21 @@
 
 @layer base {
   :root {
-    --background: 240 50% 98%; /* Light Gray */
+    --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
-    --card: 240 50% 98%;
+    --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
-    --popover: 240 50% 98%;
+    --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 271 55% 81%; /* Soft Lavender */
+    --primary: 263.4 95.4% 83.3%;
     --primary-foreground: 240 10% 3.9%;
-    --secondary: 271 44% 91%; /* Pale Violet */
+    --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 10% 3.9%;
-    --muted: 240 5% 90%;
-    --muted-foreground: 240 5% 65%;
-    --accent: 271 44% 91%; /* Pale Violet */
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 10% 3.9%;
-    --destructive: 0 84% 60%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
@@ -38,7 +38,7 @@
     --card-foreground: 210 20% 98%;
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
-    --primary: 263.4 95.4% 83.3%; /* Vibrant Lavender */
+    --primary: 263.4 95.4% 83.3%;
     --primary-foreground: 264 80% 98%;
     --secondary: 215 27.9% 16.9%;
     --secondary-foreground: 210 20% 98%;
@@ -75,10 +75,9 @@
 }
 
 .bento-item {
-  background: hsl(var(--card) / 0.5);
+  background: hsl(var(--card));
   border-radius: 1rem;
   padding: 1.5rem;
-  backdrop-filter: blur(10px);
-  border: 1px solid hsl(var(--border) / 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
