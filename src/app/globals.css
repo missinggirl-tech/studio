@@ -111,60 +111,33 @@
   border-bottom: 1px solid hsla(210, 20%, 98%, 0.15);
 }
 
-@keyframes move-stars {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-}
-
-#stars, #stars2, #stars3 {
+.dot-grid {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
-  display: block;
 }
 
-#stars {
-  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><circle cx="200" cy="200" r="1" fill="white" /><circle cx="500" cy="800" r="1" fill="white" /><circle cx="900" cy="300" r="1" fill="white" /><circle cx="1200" cy="1100" r="1" fill="white" /><circle cx="1500" cy="600" r="1" fill="white" /><circle cx="1800" cy="1400" r="1" fill="white" /><circle cx="700" cy="1700" r="1" fill="white" /><circle cx="300" cy="1300" r="1" fill="white" /></svg>') repeat;
-  background-size: 1000px 1000px;
-  animation: move-stars 200s linear infinite;
+.dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: hsl(var(--primary));
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  box-shadow: 0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary));
 }
 
-#stars2 {
-  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><circle cx="400" cy="600" r="1.5" fill="white" /><circle cx="800" cy="100" r="1.5" fill="white" /><circle cx="1100" cy="900" r="1.5" fill="white" /><circle cx="1600" cy="400" r="1.5" fill="white" /><circle cx="1900" cy="1200" r="1.5" fill="white" /><circle cx="100" cy="1500" r="1.5" fill="white" /><circle cx="600" cy="1800" r="1.5" fill="white" /><circle cx="1300" cy="1600" r="1.5" fill="white" /></svg>') repeat;
-  background-size: 1500px 1500px;
-  animation: move-stars 150s linear infinite;
+.dark .dot {
+  background-color: hsl(var(--primary));
+  box-shadow: 0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary));
 }
 
-#stars3 {
-  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><circle cx="100" cy="300" r="2" fill="white" /><circle cx="600" cy="900" r="2" fill="white" /><circle cx="1000" cy="500" r="2" fill="white" /><circle cx="1400" cy="1300" r="2" fill="white" /><circle cx="1700" cy="800" r="2" fill="white" /><circle cx="200" cy="1600" r="2" fill="white" /><circle cx="800" cy="1900" r="2" fill="white" /><circle cx="1500" cy="1700" r="2" fill="white" /></svg>') repeat;
-  background-size: 2000px 2000px;
-  animation: move-stars 100s linear infinite;
-}
-
-.dark #stars, .dark #stars2, .dark #stars3 {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><circle cx="200" cy="200" r="1" fill="hsl(210, 20%, 98%)" /><circle cx="500" cy="800" r="1" fill="hsl(210, 20%, 98%)" /><circle cx="900" cy="300" r="1" fill="hsl(210, 20%, 98%)" /><circle cx="1200" cy="1100" r="1" fill="hsl(210, 20%, 98%)" /><circle cx="1500" cy="600" r="1" fill="hsl(210, 20%, 98%)" /><circle cx="1800" cy="1400" r="1" fill="hsl(210, 20%, 98%)" /><circle cx="700" cy="1700" r="1" fill="hsl(210, 20%, 98%)" /><circle cx="300" cy="1300" r="1" fill="hsl(210, 20%, 98%)" /></svg>');
-  opacity: 0.5;
-}
-
-.dark #stars2 {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><circle cx="400" cy="600" r="1.5" fill="hsl(210, 20%, 98%)" /><circle cx="800" cy="100" r="1.5" fill="hsl(210, 20%, 98%)" /><circle cx="1100" cy="900" r="1.5" fill="hsl(210, 20%, 98%)" /><circle cx="1600" cy="400" r="1.5" fill="hsl(210, 20%, 98%)" /><circle cx="1900" cy="1200" r="1.5" fill="hsl(210, 20%, 98%)" /><circle cx="100" cy="1500" r="1.5" fill="hsl(210, 20%, 98%)" /><circle cx="600" cy="1800" r="1.5" fill="hsl(210, 20%, 98%)" /><circle cx="1300" cy="1600" r="1.5" fill="hsl(210, 20%, 98%)" /></svg>');
-}
-
-.dark #stars3 {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><circle cx="100" cy="300" r="2" fill="hsl(210, 20%, 98%)" /><circle cx="600" cy="900" r="2" fill="hsl(210, 20%, 98%)" /><circle cx="1000" cy="500" r="2" fill="hsl(210, 20%, 98%)" /><circle cx="1400" cy="1300" r="2" fill="hsl(210, 20%, 98%)" /><circle cx="1700" cy="800" r="2" fill="hsl(210, 20%, 98%)" /><circle cx="200" cy="1600" r="2" fill="hsl(210, 20%, 98%)" /><circle cx="800" cy="1900" r="2" fill="hsl(210, 20%, 98%)" /><circle cx="1500" cy="1700" r="2" fill="hsl(210, 20%, 98%)" /></svg>');
-}
 
 /* Light theme background */
 .light body {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #dde, #fff);
 }
 
 .light .bento-item, .light .header-nav {
