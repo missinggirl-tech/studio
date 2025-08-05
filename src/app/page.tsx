@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative">
       <CursorGlowBackground />
-      <main className="flex-grow container mx-auto px-4 py-8 md:px-6 md:py-16 z-[1]">
-        <div className="space-y-8 md:space-y-12">
+      <main className="flex-grow container mx-auto px-4 py-16 md:py-24 z-[1]">
+        <div className="space-y-12 md:space-y-16">
           <ProfileHeader />
           <BentoGrid />
           <Suggestions />
