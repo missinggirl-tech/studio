@@ -92,7 +92,7 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'move-bg': 'move-bg 40s ease-in-out infinite',
+        'move-bg': 'move-bg 20s ease-in-out infinite',
       },
     },
   },
