@@ -75,9 +75,10 @@
 }
 
 .bento-item {
-  background: hsl(var(--card));
+  background-color: hsla(224, 71%, 4%, 0.5);
   border-radius: 1rem;
   padding: 1.5rem;
-  border: 1px solid hsl(var(--border));
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid hsla(210, 20%, 98%, 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }

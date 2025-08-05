@@ -4,10 +4,12 @@ import { BentoGrid } from '@/components/bento-grid';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Contact } from '@/components/contact';
+import { Background } from '@/components/background';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative">
+      <Background />
       <main className="flex-grow container mx-auto px-4 py-8 md:px-6 md:py-16 z-[1]">
         <div className="space-y-8 md:space-y-12">
           <ProfileHeader />
