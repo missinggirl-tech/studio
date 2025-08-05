@@ -3,6 +3,7 @@
 import { useScrollspy } from '@/hooks/use-scrollspy';
 import { cn } from '@/lib/utils';
 import { Home } from 'lucide-react';
+import { ThemeToggle } from './theme-toggle';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -26,7 +27,7 @@ export function Header() {
           <Home/>
           <span className="sr-only">Home</span>
         </a>
-        <nav>
+        <nav className='flex items-center gap-2'>
           <ul className="flex items-center gap-2">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -44,6 +45,7 @@ export function Header() {
               </li>
             ))}
           </ul>
+           <ThemeToggle />
         </nav>
       </div>
     </header>

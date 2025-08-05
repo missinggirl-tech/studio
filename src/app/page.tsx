@@ -22,7 +22,7 @@ export default function Home() {
       </main>
       <footer className="py-8 z-[1] bento-item max-w-3xl mx-auto mb-8 text-center">
         <h2 className="text-4xl font-headline mb-4 font-bold">Let's Connect</h2>
-        <div className="container mx-auto text-center text-muted-foreground text-sm">
+        <div className="container mx-auto text-center text-muted-foreground">
           <div className="flex justify-center items-center gap-4 mb-4">
             <Button asChild variant="ghost" size="icon" className="text-muted-foreground hover:text-primary hover:bg-transparent/10 rounded-full">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer">
@@ -41,7 +41,7 @@ export default function Home() {
               <Mail className="h-5 w-5" />
               <span>amreensahana16@gmail.com</span>
             </a>
-          <p className='mt-6'>&copy; {new Date().getFullYear()} Amreen Sahana. All rights reserved.</p>
+          <p className='mt-6 text-sm'>&copy; {new Date().getFullYear()} Amreen Sahana. All rights reserved.</p>
         </div>
       </footer>
     </div>
