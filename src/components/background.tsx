@@ -21,7 +21,7 @@ export function CursorGlowBackground() {
     <div
       className="fixed inset-0 -z-10 overflow-hidden bg-background transition-all duration-300"
       style={{
-        background: `radial-gradient(600px at ${position.x}px ${position.y}px, hsla(263, 95%, 83%, 0.15), transparent 80%)`,
+        background: `radial-gradient(800px at ${position.x}px ${position.y}px, hsla(263.4, 95.4%, 83.3%, 0.25), transparent 80%)`,
       }}
     />
   );

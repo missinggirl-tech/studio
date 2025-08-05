@@ -75,7 +75,7 @@
 }
 
 .bento-item {
-  background-color: hsla(224, 71%, 4%, 0.25);
+  background-color: hsla(224, 71%, 4%, 0.15);
   border-radius: 1rem;
   padding: 1.5rem;
   border: 1px solid hsla(210, 20%, 98%, 0.15);
