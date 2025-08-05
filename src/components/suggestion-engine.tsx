@@ -34,7 +34,7 @@ export function SuggestionEngine({ profileInformation }: SuggestionEngineProps) 
   return (
     <div className="space-y-6">
       <div className="flex justify-center">
-        <Button onClick={handleSuggest} disabled={isLoading} size="lg" className="shadow-lg bg-primary hover:bg-primary/90 text-primary-foreground">
+        <Button onClick={handleSuggest} disabled={isLoading} size="lg" className="font-bold">
           {isLoading ? (
             <Loader2 className="animate-spin" />
           ) : (

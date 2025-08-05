@@ -107,7 +107,7 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" disabled={isSubmitting} className="w-full">
+        <Button type="submit" disabled={isSubmitting} className="w-full font-bold">
           {isSubmitting ? (
             <Loader2 className="animate-spin" />
           ) : (

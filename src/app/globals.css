@@ -15,7 +15,7 @@
     --secondary: 271 44% 91%; /* Pale Violet */
     --secondary-foreground: 240 10% 3.9%;
     --muted: 240 5% 90%;
-    --muted-foreground: 240 5% 45%;
+    --muted-foreground: 240 5% 65%;
     --accent: 271 44% 91%; /* Pale Violet */
     --accent-foreground: 240 10% 3.9%;
     --destructive: 0 84% 60%;
@@ -23,7 +23,7 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
-    --radius: 0.5rem;
+    --radius: 0.8rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -32,25 +32,25 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 271 55% 81%; /* Soft Lavender */
-    --primary-foreground: 240 10% 3.9%;
-    --secondary: 271 44% 91%; /* Pale Violet */
-    --secondary-foreground: 240 10% 3.9%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 271 44% 91%; /* Pale Violet */
-    --accent-foreground: 240 10% 3.9%;
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 263.4 95.4% 83.3%; /* Vibrant Lavender */
+    --primary-foreground: 264 80% 98%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.5 32.6% 70%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 271 55% 81%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 263.4 95.4% 83.3%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -81,23 +81,4 @@
   backdrop-filter: blur(10px);
   border: 1px solid hsl(var(--border) / 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-}
-
-.star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-  animation: fall linear infinite;
-  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.8);
-}
-
-@keyframes fall {
-  from {
-    transform: translateY(-200px) translateX(var(--tw-translate-x));
-  }
-  to {
-    transform: translateY(calc(100vh + 200px)) translateX(var(--tw-translate-x));
-  }
 }
