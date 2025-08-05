@@ -1,5 +1,4 @@
 import { Experience } from "./experience";
-import { Projects } from "./projects";
 import { Skills } from "./skills";
 
 export function BentoGrid() {
@@ -10,9 +9,6 @@ export function BentoGrid() {
       </div>
       <div className="bento-item">
         <Skills />
-      </div>
-      <div className="bento-item md:col-span-3">
-        <Projects />
       </div>
     </div>
   );
