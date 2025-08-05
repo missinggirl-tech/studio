@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen relative">
       <CursorGlowBackground />
       <main className="flex-grow container mx-auto px-4 py-16 md:py-24 z-[1]">
-        <div className="space-y-12 md:space-y-16">
+        <div className="space-y-24">
           <ProfileHeader />
           <BentoGrid />
           <Suggestions />
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="py-8 z-[1] bento-item max-w-3xl mx-auto mb-8 text-center">
-        <h2 className="text-3xl font-headline mb-4">Let's Connect</h2>
+        <h2 className="text-4xl font-headline mb-4 font-bold">Let's Connect</h2>
         <div className="container mx-auto text-center text-muted-foreground text-sm">
           <div className="flex justify-center items-center gap-4 mb-4">
             <Button asChild variant="ghost" size="icon" className="text-muted-foreground hover:text-primary hover:bg-transparent/10 rounded-full">

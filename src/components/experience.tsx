@@ -32,7 +32,7 @@ const experiences = [
 export function Experience() {
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-headline text-center">Experience & Education</h2>
+      <h2 className="text-3xl font-headline text-center font-bold">Experience & Education</h2>
         {experiences.map((exp) => (
           <div key={exp.title} className="flex items-start gap-4">
             <span className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-secondary-foreground flex-shrink-0 mt-1">

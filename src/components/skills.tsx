@@ -16,7 +16,7 @@ const skills = [
 export function Skills() {
   return (
     <div>
-      <h2 className="text-2xl font-headline text-center mb-4">My Skills</h2>
+      <h2 className="text-3xl font-headline text-center font-bold mb-6">My Skills</h2>
       <div className="flex flex-wrap justify-center gap-2">
         {skills.map((skill) => (
           <Badge 
