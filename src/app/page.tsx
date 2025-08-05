@@ -1,12 +1,10 @@
 import { ProfileHeader } from '@/components/profile-header';
-import { Skills } from '@/components/skills';
-import { Experience } from '@/components/experience';
-import { Contact } from '@/components/contact';
 import { Suggestions } from '@/components/suggestions';
 import { Background } from '@/components/background';
 import { BentoGrid } from '@/components/bento-grid';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Contact } from '@/components/contact';
 
 export default function Home() {
   return (
