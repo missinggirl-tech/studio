@@ -15,7 +15,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <div>
+    <section id="skills">
       <h2 className="text-3xl font-headline text-center font-bold mb-6">My Skills</h2>
       <div className="flex flex-wrap justify-center gap-2">
         {skills.map((skill) => (
@@ -29,6 +29,6 @@ export function Skills() {
           </Badge>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

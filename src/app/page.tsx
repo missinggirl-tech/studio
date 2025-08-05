@@ -5,11 +5,13 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Contact } from '@/components/contact';
 import { CursorGlowBackground } from '@/components/background';
+import { Header } from '@/components/header';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative">
       <CursorGlowBackground />
+      <Header />
       <main className="flex-grow container mx-auto px-4 py-16 md:py-24 z-[1]">
         <div className="space-y-24">
           <ProfileHeader />
